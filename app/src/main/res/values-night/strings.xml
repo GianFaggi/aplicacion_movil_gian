@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sumar">Sumar</string>
+    <string name="restar">Restar</string>
+    <string name="zoom">Zoom+</string>
+    <string name="zoommenos">Zoom-</string>
+    <string name="reset">Reset</string>
+    <string name="todo">TODO</string>
+    <string name="seleccione_una_moneda">Seleccione una moneda</string>
+    <string name="euro">EURO</string>
+    <string name="real_brasil">REAL(BRASIL)</string>
+    <string name="resultado">resultado</string>
+    <string name="convertir">convertir</string>
+</resources>
