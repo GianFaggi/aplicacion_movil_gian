@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">aplicacion_movil_gian</string>
+    <string name="convertir">convertir</string>
+    <string name="resultado">resultat</string>
+    <string name="real_brasil">REAL(BRESIL)</string>
+    <string name="euro">EURO</string>
+    <string name="dolar_usa">Dollar(USA)</string>
+    <string name="conversor_monedas">"convertisseur de devises "</string>
+    <string name="seleccione_una_moneda">sélectionner une devise</string>
+    <string name="todo">TODO</string>
+    <string name="reset">redémarrer</string>
+    <string name="ocultar">cacher</string>
+    <string name="zoommenos">Zoom-</string>
+    <string name="zoom">Zoom+</string>
+    <string name="restar">soustraire</string>
+    <string name="sumar">Ajouter</string>
+</resources>
