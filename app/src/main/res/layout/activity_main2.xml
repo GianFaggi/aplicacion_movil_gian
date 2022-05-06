@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="159dp"
         android:contentDescription="@string/todo"
         app:srcCompat="@drawable/dinero"
         tools:ignore="ImageContrastCheck" />
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="97dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="@string/conversor_monedas"
         android:textColor="@color/cardview_dark_background"
         android:textSize="24sp"
@@ -48,12 +48,12 @@
         android:textSize="20sp"
         android:text="@string/seleccione_una_moneda"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         />
 
     <RadioGroup
         android:layout_width="200dp"
-        android:layout_height="200dp" >
+        android:layout_height="150dp" >
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -84,11 +84,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
+        android:accessibilityLiveRegion="none"
+        android:autofillHints=""
+        android:clickable="false"
         android:ems="10"
-        android:inputType="number"
-        android:minHeight="48dp"
         android:hint="@string/resultado"
-        android:autofillHints="" />
+        android:minHeight="48dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -98,11 +99,13 @@
 
         <Button
             android:id="@+id/button8"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/convertir"
             android:layout_marginStart="90dp"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:backgroundTint="@color/material_on_surface_stroke"
+            android:clickable="true"
+            android:text="@string/convertir" />
 
         <Button
             android:id="@+id/button9"
@@ -110,7 +113,8 @@
             android:layout_height="wrap_content"
             android:text="@string/reset"
             android:layout_marginStart="20dp"
-            style="?android:attr/buttonBarButtonStyle" />
+            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="@color/material_on_surface_stroke"/>
     </LinearLayout>
 
 </LinearLayout>
