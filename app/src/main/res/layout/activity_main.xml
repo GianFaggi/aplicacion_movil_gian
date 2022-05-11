@@ -25,78 +25,81 @@
         android:id="@+id/btn_sumar"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="52dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/sumar"
-        app:layout_constraintBottom_toTopOf="@+id/btn_zoompositivo"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_restar"
         app:layout_constraintEnd_toStartOf="@+id/btn_restar"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_restar" />
 
     <Button
         android:id="@+id/btn_restar"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="52dp"
         android:layout_marginBottom="52dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/restar"
         app:layout_constraintBottom_toTopOf="@+id/btn_zoomnegativo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagen"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.97" />
 
     <Button
         android:id="@+id/btn_zoompositivo"
         android:layout_width="135dp"
         android:layout_height="48dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="64dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/zoom"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btn_ocultar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_zoomnegativo"
         app:layout_constraintEnd_toStartOf="@+id/btn_zoomnegativo"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_zoomnegativo"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_zoomnegativo"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="64dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/zoommenos"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btn_reiniciar"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_restar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_restar"
+        tools:layout_editor_absoluteY="467dp" />
 
     <Button
         android:id="@+id/btn_ocultar"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/ocultar"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_reiniciar" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_reiniciar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_zoompositivo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_zoompositivo"
+        app:layout_constraintTop_toTopOf="@+id/btn_reiniciar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_reiniciar"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="104dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/reset"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_zoomnegativo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_zoomnegativo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_zoomnegativo" />
 
     <EditText
         android:id="@+id/ingresocuenta"
