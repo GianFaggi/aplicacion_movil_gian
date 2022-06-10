@@ -14,4 +14,7 @@
     <string name="real_brasil">REAL(BRASIL)</string>
     <string name="resultado">resultado</string>
     <string name="convertir">convertir</string>
+    <string name="aplicacion_1">Aplicacion 1</string>
+    <string name="aplicacion_2">Aplicacion 2</string>
+    <string name="Saludo">Bienvenidos a mi Aplicacion</string>
 </resources>

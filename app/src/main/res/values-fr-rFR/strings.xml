@@ -15,4 +15,7 @@
     <string name="zoom">Zoom+</string>
     <string name="restar">soustraire</string>
     <string name="sumar">Ajouter</string>
+    <string name="aplicacion_1">Applicaction 1</string>
+    <string name="aplicacion_2">Application 2</string>
+    <string name="Saludo">" Bienvenue dans ma candidature"</string>
 </resources>

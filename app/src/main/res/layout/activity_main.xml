@@ -22,90 +22,92 @@
         tools:ignore="ImageContrastCheck" />
 
     <Button
-        android:id="@+id/btn_sumar"
+        android:id="@+id/btnMainActivity_sumar"
         android:layout_width="135dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/sumar"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_restar"
-        app:layout_constraintEnd_toStartOf="@+id/btn_restar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMainActivity_restar"
+        app:layout_constraintEnd_toStartOf="@+id/btnMainActivity_restar"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_restar" />
-
-    <Button
-        android:id="@+id/btn_restar"
-        android:layout_width="135dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="52dp"
-        android:backgroundTint="@color/material_on_surface_stroke"
-        android:text="@string/restar"
-        app:layout_constraintBottom_toTopOf="@+id/btn_zoomnegativo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen"
-        app:layout_constraintVertical_bias="0.97" />
-
-    <Button
-        android:id="@+id/btn_zoompositivo"
-        android:layout_width="135dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/material_on_surface_stroke"
-        android:text="@string/zoom"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_zoomnegativo"
-        app:layout_constraintEnd_toStartOf="@+id/btn_zoomnegativo"
-        app:layout_constraintHorizontal_bias="0.63"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_zoomnegativo"
+        app:layout_constraintTop_toTopOf="@+id/btnMainActivity_restar"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_zoomnegativo"
+        android:id="@+id/btnMainActivity_restar"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:text="@string/restar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMainActivity_zoompositivo"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:text="@string/zoom"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMainActivity_zoomnegativo"
+        app:layout_constraintEnd_toStartOf="@+id/btnMainActivity_zoomnegativo"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMainActivity_zoomnegativo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMainActivity_zoomnegativo"
         android:layout_width="135dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/zoommenos"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/btn_restar"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_restar"
-        tools:layout_editor_absoluteY="467dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMainActivity_reiniciar"
+        app:layout_constraintEnd_toEndOf="@+id/btnMainActivity_restar"
+        app:layout_constraintStart_toStartOf="@+id/btnMainActivity_restar"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainActivity_restar" />
 
     <Button
-        android:id="@+id/btn_ocultar"
+        android:id="@+id/btnMainActivity_ocultar"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="20dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/ocultar"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_reiniciar"
-        app:layout_constraintEnd_toEndOf="@+id/btn_zoompositivo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_zoompositivo"
-        app:layout_constraintTop_toTopOf="@+id/btn_reiniciar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMainActivity_reiniciar"
+        app:layout_constraintEnd_toEndOf="@+id/btnMainActivity_reiniciar"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMainActivity_reiniciar"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_reiniciar"
+        android:id="@+id/btnMainActivity_reiniciar"
         android:layout_width="135dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginTop="140dp"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/reset"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_zoomnegativo"
+        app:layout_constraintEnd_toEndOf="@+id/btnMainActivity_zoomnegativo"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_zoomnegativo"
-        app:layout_constraintTop_toBottomOf="@+id/btn_zoomnegativo" />
+        app:layout_constraintStart_toStartOf="@+id/btnMainActivity_zoomnegativo"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainActivity_restar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/ingresocuenta"
+        android:id="@+id/ETMainActivity_IngresoCuenta"
         android:layout_width="148dp"
         android:layout_height="48dp"
-        android:layout_marginTop="4dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="number"

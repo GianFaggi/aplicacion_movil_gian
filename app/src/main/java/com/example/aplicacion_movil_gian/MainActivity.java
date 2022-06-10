@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     /* btnMainActivity es el nombre de la variable, puede diferir del view, por buena practica no deberia */
-    private Button btnMainActivityAceptar, btnMainActivityCancelar;
-    private EditText edtMaintActivityNombre;
+    private Button btnMainActivity_sumar, btnMainActivity_restar, btnMainActivity_zoompositivo, btnMainActivity_zoomnegativo, btnMainActivity_ocultar, btnMainActivity_reiniciar;
+    private EditText ETMainActivity_IngresoCuenta;
     private TextView txtMainActivityAlgo;
+    private int N = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,24 +29,82 @@ public class MainActivity extends AppCompatActivity {
     
     private void findViews(){
         /*R.id. llama a el boton del view, tener en cuenta la funcion onCreate. */
-        btnMainActivityAceptar = findViewById(R.id.btn_sumar);
-        
-        btnMainActivityCancelar = findViewById(R.id.btn_restar);
 
-        btnMainActivityAceptar.setOnClickListener(new View.OnClickListener() {
+        btnMainActivity_sumar        = findViewById(R.id.btnMainActivity_sumar);
+        btnMainActivity_restar       = findViewById(R.id.btnMainActivity_restar);
+        btnMainActivity_zoompositivo = findViewById(R.id.btnMainActivity_zoompositivo);
+        btnMainActivity_zoomnegativo = findViewById(R.id.btnMainActivity_zoomnegativo);
+        btnMainActivity_ocultar      = findViewById(R.id.btnMainActivity_ocultar);
+        btnMainActivity_reiniciar    = findViewById(R.id.btnMainActivity_reiniciar);
+        ETMainActivity_IngresoCuenta = findViewById(R.id.ETMainActivity_IngresoCuenta);
+
+        btnMainActivity_sumar.setOnClickListener(new View.OnClickListener() {
             @Override
             /*Toast "create new toast" te pone todas las variables */
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Esto es un aviso", Toast.LENGTH_SHORT).show();
+                Suma();
             }
         });
-        
-        btnMainActivityCancelar.setOnClickListener(new View.OnClickListener() {
+
+        btnMainActivity_restar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Resta();
+            }
+        });
+
+        btnMainActivity_zoompositivo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
             }
         });
-        
+
+        btnMainActivity_zoomnegativo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnMainActivity_ocultar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ETMainActivity_IngresoCuenta.setVisibility(view.INVISIBLE);
+            }
+        });
+
+        btnMainActivity_reiniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                limpiarControles();
+
+            }
+        });
     }
+
+
+    private void limpiarControles() {
+
+        ETMainActivity_IngresoCuenta.setText("");
+        N = 0;
+
+    }
+
+    private void Suma() {
+        String nInt  = ETMainActivity_IngresoCuenta.getText().toString();
+        int suma = Integer.parseInt(nInt);
+        N = suma + N;
+
+        ETMainActivity_IngresoCuenta.setText(String.valueOf(N));
+    }
+
+    private void Resta() {
+        String nInt  = ETMainActivity_IngresoCuenta.getText().toString();
+        int resta = Integer.parseInt(nInt);
+        N = resta - N;
+
+        ETMainActivity_IngresoCuenta.setText(String.valueOf(N));
+    }
+
 }
