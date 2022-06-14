@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     /* btnMainActivity es el nombre de la variable, puede diferir del view, por buena practica no deberia */
     private Button btnMainActivity_sumar, btnMainActivity_restar, btnMainActivity_zoompositivo, btnMainActivity_zoomnegativo, btnMainActivity_ocultar, btnMainActivity_reiniciar;
     private EditText ETMainActivity_IngresoCuenta;
-    private TextView txtMainActivityAlgo;
     private int N = 0;
 
     @Override
@@ -70,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         btnMainActivity_ocultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ETMainActivity_IngresoCuenta.setVisibility(view.INVISIBLE);
+                ETMainActivity_IngresoCuenta.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -88,13 +86,17 @@ public class MainActivity extends AppCompatActivity {
 
         ETMainActivity_IngresoCuenta.setText("");
         N = 0;
+      /*  if (ETMainActivity_IngresoCuenta.is {
+
+        }
+*/
 
     }
 
     private void Suma() {
         String nInt  = ETMainActivity_IngresoCuenta.getText().toString();
         int suma = Integer.parseInt(nInt);
-        N = suma + N;
+        N = N + suma;
 
         ETMainActivity_IngresoCuenta.setText(String.valueOf(N));
     }
@@ -102,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     private void Resta() {
         String nInt  = ETMainActivity_IngresoCuenta.getText().toString();
         int resta = Integer.parseInt(nInt);
-        N = resta - N;
+        N = N - resta;
 
         ETMainActivity_IngresoCuenta.setText(String.valueOf(N));
     }

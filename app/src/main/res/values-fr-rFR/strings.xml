@@ -18,4 +18,8 @@
     <string name="aplicacion_1">Applicaction 1</string>
     <string name="aplicacion_2">Application 2</string>
     <string name="Saludo">" Bienvenue dans ma candidature"</string>
+    <string name="Contactenos">"Nous contacter "</string>
+    <string name="Telefono">Téléphoner</string>
+    <string name="Mail">Courrier</string>
+    <string name="GitHub">GitHub</string>
 </resources>

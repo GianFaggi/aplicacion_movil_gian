@@ -18,4 +18,8 @@
     <string name="aplicacion_1">App 1</string>
     <string name="aplicacion_2">App 2</string>
     <string name="Saludo">" Welcome to my Application"</string>
+    <string name="Contactenos">"Contact Us "</string>
+    <string name="Telefono">Phone</string>
+    <string name="Mail">Mail</string>
+    <string name="GitHub">GitHub</string>
 </resources>

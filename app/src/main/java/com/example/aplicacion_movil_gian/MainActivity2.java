@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
+/*import android.widget.Toast;
+*/
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -53,7 +55,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         RBMainActivity_2_Dolar.setChecked(true);
         ETMainActivity_2_IngresoDinero.setText("");
-        TVMainActivity_2_Resultado.setText("resultado");
+        TVMainActivity_2_Resultado.setText("$$$");
 
     }
 

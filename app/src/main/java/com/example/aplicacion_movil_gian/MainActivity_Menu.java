@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity_Menu extends AppCompatActivity {
 
-    private Button btn_activity_1, btn_activity_2;
+    private Button btnMenuActivity_1, btnMenuActivity_2, btnMenuActivity_Contactenos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,11 @@ public class MainActivity_Menu extends AppCompatActivity {
     }
 
     private void findViews(){
-         btn_activity_1 = findViewById(R.id.btn_activity_1);
-         btn_activity_2 = findViewById(R.id.btn_activity_2);
+        btnMenuActivity_1           = findViewById(R.id.btnMenuActivity_1);
+        btnMenuActivity_2           = findViewById(R.id.btnMenuActivity_2);
+        btnMenuActivity_Contactenos = findViewById(R.id.btnMenuActivity_Contactenos);
 
-        btn_activity_1.setOnClickListener(new View.OnClickListener() {
+        btnMenuActivity_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
@@ -35,13 +36,22 @@ public class MainActivity_Menu extends AppCompatActivity {
             }
         });
 
-        btn_activity_2.setOnClickListener(new View.OnClickListener() {
+        btnMenuActivity_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), MainActivity2.class);
                 startActivity(intent);
             }
         });
+
+        btnMenuActivity_Contactenos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), Contactenos.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }

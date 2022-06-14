@@ -16,5 +16,9 @@
     <string name="convertir">convertir</string>
     <string name="aplicacion_1">Aplicacion 1</string>
     <string name="aplicacion_2">Aplicacion 2</string>
-    <string name="Saludo">Bienvenidos a mi Aplicacion</string>
+    <string name="Saludo">Bienvenido a mi Aplicacion</string>
+    <string name="Contactenos">Contactenos</string>
+    <string name="Telefono">Telefono</string>
+    <string name="Mail">Mail</string>
+    <string name="GitHub">GitHub</string>
 </resources>
