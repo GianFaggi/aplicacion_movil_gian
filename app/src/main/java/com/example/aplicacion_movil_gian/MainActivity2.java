@@ -15,9 +15,10 @@ import android.widget.TextView;
 public class MainActivity2 extends AppCompatActivity {
 
     private Button btnMainActivity_2_Convertir, btnMainActivity_2_Reiniciar;
-    private RadioButton RBMainActivity_2_Dolar, RBMainActivity_2_Euro, RBMainActivity_2_Real;
+    private RadioButton RBMainActivity_2_Dolar , RBMainActivity_2_Euro, RBMainActivity_2_Real;
     private EditText ETMainActivity_2_IngresoDinero;
     private TextView TVMainActivity_2_Resultado;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +45,8 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
 
                     convertirMoneda();
+
                 }
-
-
         });
 
     }
@@ -76,16 +76,5 @@ public class MainActivity2 extends AppCompatActivity {
 
         TVMainActivity_2_Resultado.setText(String.valueOf(monto * cotizacion));
     }
-
-    /*
-    private boolean datosValidos() {
-        boolean resultado;
-
-        resultado = ETMainActivity_2_IngresoDinero.getText().toString().isEmpty();
-
-        return resultado;
-    }
-
-     */
 
 }

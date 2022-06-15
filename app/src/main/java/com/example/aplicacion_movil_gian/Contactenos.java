@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+
 public class Contactenos extends AppCompatActivity {
 
 
@@ -41,8 +43,9 @@ public class Contactenos extends AppCompatActivity {
             @Override
             /*Toast "create new toast" te pone todas las variables */
             public void onClick(View view) {
-                String correo = "gianfaggi@gmail.com";
+                String[] correo = {"gianfaggi@gmail.com"};
                 String sujeto = "Prueba";
+
 
                 composeEmail(correo, sujeto);
 
@@ -53,13 +56,14 @@ public class Contactenos extends AppCompatActivity {
             @Override
             /*Toast "create new toast" te pone todas las variables */
             public void onClick(View view) {
+                openWebPage("https://github.com/GianFaggi");
 
             }
         });
 
     }
 
-    public void composeEmail(String addresses, String subject) {
+    public void composeEmail(String[] addresses, String subject) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
@@ -72,6 +76,14 @@ public class Contactenos extends AppCompatActivity {
     public void dialPhoneNumber(String phoneNumber) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    public void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
